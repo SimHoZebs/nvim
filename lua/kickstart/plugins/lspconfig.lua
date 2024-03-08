@@ -192,6 +192,8 @@ return {
             local server = servers[server_name] or {}
             require('lspconfig')[server_name].setup {
               cmd = server.cmd,
+              -- root_dir equals to the root of the project
+              root_dir = require('lspconfig').util.root_pattern '.git',
               settings = server.settings,
               filetypes = server.filetypes,
               -- This handles overriding only values explicitly passed

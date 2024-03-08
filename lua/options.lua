@@ -59,4 +59,7 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Powershell as default shell
+vim.g.terminal_emulator = 'C:\\Program Files\\PowerShell\7\\pwsh.exe'
+
 -- vim: ts=2 sts=2 sw=2 et
