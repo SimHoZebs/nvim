@@ -62,4 +62,6 @@ vim.opt.scrolloff = 10
 -- Powershell as default shell
 vim.g.terminal_emulator = 'C:\\Program Files\\PowerShell\7\\pwsh.exe'
 
+vim.opt.autoread = true
+
 -- vim: ts=2 sts=2 sw=2 et
