@@ -50,3 +50,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Easier terminal escape
 vim.keymap.set('t', '<leader>t', '<C-\\><C-n>')
+
+-- buffer
+vim.keymap.set('n', '<leader>bd', '<cmd>bd<CR>', { desc = 'Close buffer' })
+vim.keymap.set('n', '<leader>bn', '<cmd>bn<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<leader>bp', '<cmd>bp<CR>', { desc = 'Previous buffer' })
+vim.keymap.set('n', '<leader>bs', '<cmd>ls<CR>', { desc = 'List buffers' })
