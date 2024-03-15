@@ -6,10 +6,17 @@ return {
       options = {
         theme = 'onedark',
       },
-      sections = {
-        lualine_a = { 'mode' },
-        lualine_b = { 'branch' },
-        lualine_c = { 'buffers' },
+      tabline = {
+        lualine_c = {
+          {
+            'buffers',
+            buffers_color = {
+              'buffers',
+              active = { bg = '#8957E5', fg = '#d4d4d4' },
+              inactive = { bg = '#1e1e1e', fg = '#d4d4d4' },
+            },
+          },
+        },
       },
     }
   end,
