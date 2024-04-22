@@ -16,7 +16,7 @@ return {
         typescriptreact = { { 'biome', 'prettierd' } },
         javascriptreact = { { 'biome', 'prettierd' } },
         json = { 'biome', 'prettierd' },
-        astro = { 'astro-language-server' },
+        astro = { 'astro', 'prettierd', prettier },
       },
     },
   },
