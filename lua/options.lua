@@ -59,15 +59,6 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Powershell as default shell. I have no idea what it's actually doing, but it works.
-vim.opt.shell = vim.fn.executable 'pwsh' and 'pwsh' or 'powershell'
-vim.opt.shellcmdflag =
-  "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new();$PSDefaultParameterValues['Out-File:Encoding']='utf8';Remove-Alias -Force -ErrorAction SilentlyContinue tee;"
-vim.opt.shellredir = '2>&1 | %%{ "$_" } | Out-File %s; exit $LastExitCode'
-vim.opt.shellpipe = '2>&1 | %%{ "$_" } | tee %s; exit $LastExitCode'
-vim.opt.shellquote = ''
-vim.opt.shellxquote = ''
-
 -- Automatically read file when changed outside of neovim
 vim.opt.autoread = true
 
