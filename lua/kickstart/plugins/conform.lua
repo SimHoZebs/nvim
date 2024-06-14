@@ -19,6 +19,11 @@ return {
         json = { 'biome', 'prettierd' },
         astro = { 'prettierd' },
       },
+      formatters = {
+        stylua = {
+          args = { '--config-path', vim.fn.stdpath('config') .. '/.stylua.toml' },
+        },
+      }
     },
   },
 }
