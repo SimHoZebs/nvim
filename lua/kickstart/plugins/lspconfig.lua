@@ -190,6 +190,9 @@ return {
         handlers = {
           function(server_name)
             local server = servers[server_name] or {}
+            if server_name == 'html' then
+              server.filetypes ={'html','htmldjango'}
+            end
             require('lspconfig')[server_name].setup {
               cmd = server.cmd,
               -- root_dir equals to the root of the project
