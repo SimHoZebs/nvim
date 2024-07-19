@@ -193,6 +193,9 @@ return {
             if server_name == 'html' then
               server.filetypes ={'html','htmldjango'}
             end
+            if server_name == 'jqls' then
+              server.filetypes ={'htmldjango'}
+            end
             require('lspconfig')[server_name].setup {
               cmd = server.cmd,
               -- root_dir equals to the root of the project
