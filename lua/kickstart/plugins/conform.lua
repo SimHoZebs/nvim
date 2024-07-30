@@ -11,7 +11,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         html = { 'biome', 'prettierd' },
-        htmldjango = { 'biome', 'prettierd' },
+        htmldjango = { 'djlint' },
         javascript = { 'biome', 'prettierd' },
         typescript = { 'biome', 'prettierd' },
         python = { 'black' },
