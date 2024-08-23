@@ -19,6 +19,20 @@ return {
         },
       },
       sections = {
+        -- show only the first character of the mode. If it has a dash, show both
+        -- e.g Normal -> N, Visual -> V, Visual-Block -> V-B
+        lualine_a = {
+          {
+            'mode',
+              fmt = function(mode)
+                if mode:find('-') then
+                  return mode:sub(1, 1) .. '-' .. mode:match('%-(%w)')
+                else
+                  return mode:sub(1, 1)
+              end
+            end
+          }
+        },
         lualine_c ={
           {
             'filename',
@@ -26,7 +40,8 @@ return {
             path = 1
           },
         },
-        lualine_y = {} }
+        lualine_y = {}
+      }
     }
   end,
 }
