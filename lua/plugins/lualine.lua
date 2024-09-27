@@ -33,6 +33,7 @@ return {
             end
           }
         },
+        lualine_b = { 'diff', 'diagnostics' },
         lualine_c ={
           {
             'filename',
