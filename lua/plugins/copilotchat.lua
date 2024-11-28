@@ -12,7 +12,12 @@ return {
       debug = true, -- Enable debugging
       mappings = {
         submit_prompt = {
-          insert = "<C-k>",
+          normal = "<Enter>",
+          insert = "<Enter>",
+        },
+        close = {
+          normal = "q",
+          insert = "<C-q>"
         }
       }
     },
@@ -41,7 +46,7 @@ return {
         function()
           require("CopilotChat").open()
         end,
-        desc = "Open CopilotChat",
+        desc = "CopilotChat - Open Vertical",
       },
       -- Reset CopilotChat window
       {
@@ -49,8 +54,32 @@ return {
         function()
           require("CopilotChat").reset()
         end,
-        desc = "Reset CopilotChat",
+        desc = "CopilotChat - Reset",
       },
+      {
+        "<leader>cn",
+        function()
+          require("CopilotChat").open({
+            window = {
+              layout = 'replace',
+            }
+          })
+        end,
+        desc = "CopilotChat - Open Replace",
+     },
+      {
+        "<leader>cf",
+        function ()
+          require("CopilotChat").open({
+            window = {
+              layout = 'float',
+              width = 0.8,
+              height = 0.8
+            }
+          })
+        end,
+        desc = "CopilotChat - Open Float"
+      }
     },
   }
 }
