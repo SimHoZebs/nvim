@@ -62,4 +62,5 @@ vim.opt.scrolloff = 10
 -- Automatically read file when changed outside of neovim
 vim.opt.autoread = true
 
+vim.o.tabstop = 4
 -- vim: ts=2 sts=2 sw=2 et

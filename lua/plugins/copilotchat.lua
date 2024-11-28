@@ -10,7 +10,11 @@ return {
     build = "make tiktoken",
     opts = {
       debug = true, -- Enable debugging
-      -- Adding key mappings for lazy.nvim
+      mappings = {
+        submit_prompt = {
+          insert = "<C-k>",
+        }
+      }
     },
     keys = {
       -- Show help actions with telescope
