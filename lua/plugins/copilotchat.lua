@@ -67,7 +67,7 @@ return {
         end,
         desc = "CopilotChat - Open Replace",
      },
-      {
+     {
         "<leader>cf",
         function ()
           require("CopilotChat").open({
@@ -79,7 +79,7 @@ return {
           })
         end,
         desc = "CopilotChat - Open Float"
-      }
+     }
     },
   }
 }
