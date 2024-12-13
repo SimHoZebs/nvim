@@ -1,6 +1,12 @@
 return {
   {
     'wellle/context.vim',
-    event = "VeryLazy"
+    event = "VeryLazy",
+    config = function ()
+      -- run :ContextEnable after loading
+      vim.cmd('ContextEnable')
+    end
+
+
   }
 }
