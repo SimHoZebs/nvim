@@ -24,25 +24,25 @@ return {
         lualine_a = {
           {
             'mode',
-              fmt = function(mode)
-                if mode:find('-') then
-                  return mode:sub(1, 1) .. '-' .. mode:match('%-(%w)')
-                else
-                  return mode:sub(1, 1)
+            fmt = function(mode)
+              if mode:find '-' then
+                return mode:sub(1, 1) .. '-' .. mode:match '%-(%w)'
+              else
+                return mode:sub(1, 1)
               end
-            end
-          }
+            end,
+          },
         },
         lualine_b = { 'diff', 'diagnostics' },
-        lualine_c ={
+        lualine_c = {
           {
             'filename',
             file_status = true,
-            path = 1
+            path = 1,
           },
         },
-        lualine_y = {}
-      }
+        lualine_y = {},
+      },
     }
   end,
 }

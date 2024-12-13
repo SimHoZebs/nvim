@@ -19,14 +19,14 @@ return {
         javascriptreact = { 'biome', 'prettierd', 'eslint_d' },
         json = { 'biome', 'prettierd', 'eslint_d' },
         astro = { 'prettierd' },
-        java ={'clang-format'},
+        java = { 'clang-format' },
       },
       formatters = {
         stylua = {
           -- args = { '--config-path', vim.fn.stdpath('config') .. '/.stylua.toml' },
           args = {},
         },
-      }
+      },
     },
   },
 }

@@ -21,17 +21,17 @@ return {
       require('which-key').setup()
 
       -- Document existing key chains
-      require('which-key').add({
-        { "<leader>d", group = "[D]ocument" },
-        { "<leader>d_", hidden = true },
-        { "<leader>r", group = "[R]ename" },
-        { "<leader>r_", hidden = true },
-        { "<leader>s", group = "[S]earch" },
-        { "<leader>s_", hidden = true },
-        { "<leader>w", group = "[W]orkspace" },
-        { "<leader>w_", hidden = true }
-      })
-    end
-  }
+      require('which-key').add {
+        { '<leader>d', group = '[D]ocument' },
+        { '<leader>d_', hidden = true },
+        { '<leader>r', group = '[R]ename' },
+        { '<leader>r_', hidden = true },
+        { '<leader>s', group = '[S]earch' },
+        { '<leader>s_', hidden = true },
+        { '<leader>w', group = '[W]orkspace' },
+        { '<leader>w_', hidden = true },
+      }
+    end,
+  },
 }
 -- vim: ts=2 sts=2 sw=2 et
