@@ -14,7 +14,7 @@ return {
         htmldjango = { 'djlint' },
         javascript = { 'biome', 'prettierd' },
         typescript = { 'biome', 'prettierd' },
-        python = { 'blackd_client' },
+        python = { 'black' },
         typescriptreact = { 'biome', 'prettierd' },
         javascriptreact = { 'biome', 'prettierd' },
         json = { 'biome', 'prettierd' },
